@@ -12,18 +12,13 @@ if(isset($_POST['register'])) {
             $resultado = mysqli_query($conex, $consulta);
             if ($resultado){
                 ?>
-                <h3 class="success">Su registro se ha completado</h3>
-                <?php
-            } else {
-                ?>
-                <h3 class="error">Ocurrió un error con su registro </h3>
+                <h3 class="success">Su registro se ha completado.</h3>
                 <?php
             }
     } else {
         ?>
-            <h3 class="error">Llena todos los campos </h3>
+            <h3 class="error">Ocurrió un error, llena todos los campos.</h3>
         <?php
     }
 }
-
 ?>
